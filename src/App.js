@@ -32,13 +32,18 @@ function App() {
     }
 ])
 
-// this function is to delete task
+// add task function
+const addTask = (task) => {
+  console.log(task)
+}
+
+//  delete task function 
 const deleteTask = (id) => {
   setTasks(tasks.filter((task)=> task.id !== id))
 } 
 
 
-// This function is the green toggle reminder next to tasks 
+// green toggle reminder next to tasks  function
 
 const toggleReminder = (id) => {
   setTasks(
@@ -53,7 +58,7 @@ const toggleReminder = (id) => {
   return (
     <div className="container">
      <Header />
-     <AddTask />
+     <AddTask onAdd = {addTask}/>
      {tasks.length > 0 ? (
      <Tasks tasks={tasks} onDelete = 
      { deleteTask } onToggle = {toggleReminder}/> ) : ('No tasks to display')}
