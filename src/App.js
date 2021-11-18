@@ -31,10 +31,17 @@ function App() {
     }
 ])
 
+// this function is to delete task
+const deleteTask = (id) => {
+  setTasks(tasks.filter((task)=> task.id !== id))
+} 
+
+
+
   return (
     <div className="container">
      <Header />
-     <Tasks tasks={tasks} />
+     <Tasks tasks={tasks} onDelete = { deleteTask } />
     </div>
   );
 }
