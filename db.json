@@ -27,7 +27,7 @@
     {
       "text": "Go for Covid Test ",
       "day": "Tuesday at 4pm ",
-      "reminder": true,
+      "reminder": false,
       "id": 4
     }
   ]
