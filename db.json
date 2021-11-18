@@ -1,29 +1,34 @@
 {
   "tasks": [
     {
-      "id":1,
-      "text":"React Course",
+      "id": 1,
+      "text": "React Course",
       "day": "November 18th at 10am",
       "reminder": true
-  },
-  {
-    "id":2,
-    "text":"Job interview",
-    "day": "November 25th at 11am",
-    "reminder": true
-  },
-  {
-    "id":1,
-      "text":"bastball game",
+    },
+    {
+      "id": 2,
+      "text": "Job interview",
+      "day": "November 25th at 11am",
+      "reminder": true
+    },
+    {
+      "id": 1,
+      "text": "bastball game",
       "day": "December 11th at 10am",
       "reminder": true
-  },
-  {
-    "id":4,
-      "text":"food shopping",
-      "day": "November 18th at 10am",
-      "reminder": false
-  }
-   
+    },
+    {
+      "text": "go to church ",
+      "day": "Sunday 21st November at 1pm",
+      "reminder": true,
+      "id": 3
+    },
+    {
+      "text": "Go for Covid Test ",
+      "day": "Tuesday at 4pm ",
+      "reminder": true,
+      "id": 4
+    }
   ]
 }
