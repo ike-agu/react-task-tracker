@@ -15,7 +15,7 @@ function App() {
         id:2,
         text:'Job Interview',
         day: 'November 19th at 2pm',
-        reminder: true,
+        reminder: true, 
     },
     {
         id:3,
@@ -37,11 +37,24 @@ const deleteTask = (id) => {
 } 
 
 
+// This function is the green toggle reminder next to tasks 
+
+const toggleReminder = (id) => {
+  setTasks(
+    tasks.map((task) => 
+      task.id === id? {...task, reminder : !task.reminder} : task
+    )
+  )
+
+}
+
 
   return (
     <div className="container">
      <Header />
-     <Tasks tasks={tasks} onDelete = { deleteTask } />
+     {tasks.length > 0 ? (
+     <Tasks tasks={tasks} onDelete = 
+     { deleteTask } onToggle = {toggleReminder}/> ) : ('No tasks to display')}
     </div>
   );
 }
